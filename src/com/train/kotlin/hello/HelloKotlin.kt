@@ -1,3 +1,4 @@
+// 没指定包的话，默认为default包
 package com.train.kotlin.hello
 
 /**

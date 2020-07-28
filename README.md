@@ -20,3 +20,23 @@ Kotlin显然比起Java有着诸多的改良和简化，这门语言具体如何�
 - 安全: 避免空指针异常等整个类的错误。
 - 互操作性: 充分利用JVM、Android和浏览器的现有库。
 - 工具友好: 可用任何Java IDE或者使用命令行构建。
+
+## Kotlin默认导入的包
+- kotlin.*
+- kotlin.annotation.*
+- kotlin.collections.*
+- kotlin.comparisons.*
+- kotlin.io.*
+- kotlin.ranges.*
+- kotlin.sequences.*
+- kotlin.text.*
+
+## Kotlin变量
+可变变量定义：<code>var</code>关键字
+```text
+var <标识符> : <类型> = <初始化值>
+```
+不可变变量定义：<code>val</code>关键字，只能赋值一次的变量(类似Java中<code>final</code>修饰的变量)
+```text
+val <标识符> : <类型> = <初始化值>
+```

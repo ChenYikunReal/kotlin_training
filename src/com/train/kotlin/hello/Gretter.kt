@@ -11,5 +11,5 @@ class Greeter(private val name: String) {
 
 fun main(args: Array<String>) {
     // 创建一个对象不用 new 关键字
-    Greeter("World!").greet()
+    Greeter("Kotlin!").greet()
 }
