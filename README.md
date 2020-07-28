@@ -12,7 +12,7 @@ Kotlin是怎样的一种编程语言呢？
 - Kotlin可以编译成Java字节码，也可以编译成JavaScript，方便在没有JVM的设备上运行。 
 
 不得不说的是，Kotlin这门神奇的编程语言正是我们亲爱的JetBrains公司开发的。<br/>
-Kotlin显然比起Java有着诸多的改良和简化，这门语言具体如何，暂且不知，先学一学也无妨！<br/>
+Kotlin显然比起Java有着诸多的改良和简化，这门语言具体如何，暂且不知，先学一学也无妨！<br/><br/>
 ![在这里插入图片描述](https://github.com/ChenYikunReal/kotlin_training/blob/master/images/kotlin_programming.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70)
 
 ## 选择Kotlin的优点
