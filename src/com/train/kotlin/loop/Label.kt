@@ -1,0 +1,9 @@
+package com.train.kotlin.loop
+
+fun main() {
+    loop@ for (i in 1..100) {
+        for (j in 1..100) {
+            if (i + j > 150) break@loop
+        }
+    }
+}

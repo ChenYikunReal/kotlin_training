@@ -14,6 +14,8 @@ Kotlin是怎样的一种编程语言呢？
 不得不说的是，Kotlin这门神奇的编程语言正是我们亲爱的JetBrains公司开发的。<br/>
 Kotlin显然比起Java有着诸多的改良和简化，这门语言具体如何，暂且不知，先学一学也无妨！<br/><br/>
 ![在这里插入图片描述](https://github.com/ChenYikunReal/kotlin_training/blob/master/images/kotlin_programming.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg5NjMxOA==,size_16,color_FFFFFF,t_70)
+<br/><br/>
+[菜鸟教程](https://www.runoob.com/kotlin/kotlin-tutorial.html)
 
 ## 选择Kotlin的优点
 - 简洁: 大大减少样板代码的数量。
@@ -39,4 +41,42 @@ var <标识符> : <类型> = <初始化值>
 不可变变量定义：<code>val</code>关键字，只能赋值一次的变量(类似Java中<code>final</code>修饰的变量)
 ```text
 val <标识符> : <类型> = <初始化值>
+```
+
+## Kotlin数据类型
+|类型 	|   位宽度|
+|:---:|:---:|
+|Double |	64|
+|Float |	32|
+|Long |	64|
+|Int |	32|
+|Short |	16|
+|Byte |	8|
+
+## Kotlin面向对象相关修饰符
+- classModifier:(类属性修饰符，标示类本身特性)
+    - abstract：抽象类
+    - final：类不可继承(默认)
+    - enum：枚举类
+    - open：类可继承
+    - annotation：注解类
+- accessModifier(访问权限修饰符)
+    - private：仅在同一个文件中可见
+    - protected：同一个文件中或子类可见
+    - public：所有调用的地方都可见
+    - internal：同一个模块中可见
+
+## Kotlin类属性的声明
+```text
+var <propertyName>[: <PropertyType>] [= <property_initializer>]
+    [<getter>]
+    [<setter>]
+```
+
+## Kotlin构造器说明
+> 在JVM中，如果主构造函数的所有参数都有默认值，编译器会生成一个附加的无参的构造函数，这个构造函数会直接使用默认值。
+
+这使得Kotlin可以更简单的使用像Jackson或者JPA这样使用无参构造函数来创建类实例的库。
+```kotlin
+class Customer(val customerName: String = "")
 ```
