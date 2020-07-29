@@ -80,3 +80,17 @@ var <propertyName>[: <PropertyType>] [= <property_initializer>]
 ```kotlin
 class Customer(val customerName: String = "")
 ```
+
+## Kotlin关键词field的理解
+[What's Kotlin Backing Field For?](https://stackoverflow.com/questions/43220140/whats-kotlin-backing-field-for/43220314)<br/>
+核心语句：
+> Remember in kotlin whenever you write foo.bar = value it will be translated into a setter call instead of a PUTFIELD.
+
+在 Kotlin 中，任何时候当你写出“一个变量后边加等于号”这种形式的时候，比如我们定义 var no: Int 变量，当你写出 no = ... 这种形式的时候，这个等于号都会被编译器翻译成调用 setter 方法；而同样，在任何位置引用变量时，只要出现 no 变量的地方都会被编译器翻译成 getter 方法。那么问题就来了，当你在 setter 方法内部写出 no = ... 时，相当于在 setter 方法中调用 setter 方法，形成递归，进而形成死循环。
+
+## Kotlin使用枚举常量
+Kotlin 中的枚举类具有合成方法，允许遍历定义的枚举常量，并通过其名称获取枚举常数。
+```text
+EnumClass.valueOf(value: String): EnumClass  // 转换指定 name 为枚举值，若未匹配成功，会抛出IllegalArgumentException
+EnumClass.values(): Array<EnumClass>        // 以数组的形式，返回枚举值
+```

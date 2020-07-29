@@ -1,4 +1,4 @@
-package com.train.kotlin.clazz
+package com.train.kotlin.oop.oop_class
 
 class Test {
     var v = "成员属性"
@@ -18,6 +18,7 @@ fun main() {
     val test = Test()
     /**
      * 采用对象表达式来创建接口对象，即匿名内部类的实例
+     * 必须用object关键词
      */
     test.setInterFace(object : TestInterFace {
         override fun test() {

@@ -1,4 +1,4 @@
-package com.train.kotlin.clazz
+package com.train.kotlin.oop.oop_class
 
 class Runoob  constructor(name: String) {
     var url: String = "http://www.runoob.com"

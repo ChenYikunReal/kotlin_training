@@ -1,4 +1,4 @@
-package com.train.kotlin.clazz
+package com.train.kotlin.oop.oop_class
 
 /**
  * 普普通通，只有属性的类
