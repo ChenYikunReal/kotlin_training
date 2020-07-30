@@ -94,3 +94,9 @@ Kotlin 中的枚举类具有合成方法，允许遍历定义的枚举常量，�
 EnumClass.valueOf(value: String): EnumClass  // 转换指定 name 为枚举值，若未匹配成功，会抛出IllegalArgumentException
 EnumClass.values(): Array<EnumClass>        // 以数组的形式，返回枚举值
 ```
+
+## Kotlin对象表达式和对象声明之间的语义差异
+对象表达式和对象声明之间有一个重要的语义差别：
+- 对象表达式是在使用他们的地方立即执行的
+- 对象声明是在第一次被访问到时延迟初始化的
+- 伴生对象的初始化是在相应的类被加载(解析)时，与Java静态初始化器的语义相匹配
